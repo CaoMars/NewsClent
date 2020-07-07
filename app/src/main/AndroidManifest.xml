@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.cyt.androidclient">
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/title"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/title"
+        android:supportsRtl="true"
+        android:usesCleartextTraffic="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".activity.MainActivity"
+            android:theme="@style/AppTheme.Nobar"
+            >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".activity.NbaDetailActivity" android:theme="@style/AppTheme.Nobar">
+        </activity>
+        <activity android:name=".activity.AppleDetailActivity" android:theme="@style/AppTheme.Nobar"/>
+        <activity android:name=".activity.CarDetailActivity" android:theme="@style/AppTheme.Nobar"/>
+        <activity android:name=".activity.FinanceDetailActivity" android:theme="@style/AppTheme.Nobar" />
+        <activity android:name=".activity.NationNewsActivity" android:theme="@style/AppTheme.Nobar"/>
+    </application>
+
+</manifest>

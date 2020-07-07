@@ -1,1 +1,1 @@
-# NewsClent
+# SimpleNews
